@@ -11,20 +11,20 @@ public class HealthyBurger extends Hamburger{
         super("Healthy Burger", "Brown Rye", meatType, price);
     }
 
-    @Override
-    public double itemizeHamburger() {
-        double hamburgerPrice =  super.itemizeHamburger();//calls hamburger.itemizeHamburger(), since all additions = null only base price is returned to health.itemtize
-        if(this.healthyAddition1Name != null){
-            hamburgerPrice += healthyAddition1Price;
-            System.out.println("Added " + healthyAddition1Name + " for an extra "+ healthyAddition1Price);
-        }
-        if(this.healthyAddition2Name != null){
-            hamburgerPrice += healthyAddition2Price;
-            System.out.println("Added " + healthyAddition2Name + " for an extra " + healthyAddition2Price);
-        }
-
-        return hamburgerPrice;
-    }
+//    @Override
+//    public double itemizeHamburger() {
+//        double hamburgerPrice =  super.itemizeHamburger();//calls hamburger.itemizeHamburger(), since all additions = null only base price is returned to health.itemtize
+//        if(this.healthyAddition1Name != null){
+//            hamburgerPrice += healthyAddition1Price;
+//            System.out.println("Added " + healthyAddition1Name + " for an extra "+ healthyAddition1Price);
+//        }
+//        if(this.healthyAddition2Name != null){
+//            hamburgerPrice += healthyAddition2Price;
+//            System.out.println("Added " + healthyAddition2Name + " for an extra " + healthyAddition2Price);
+//        }
+//
+//        return hamburgerPrice;
+//    }
 
     public void addHealthyAddition1(String name, double price){
         this.healthyAddition1Name = name;
